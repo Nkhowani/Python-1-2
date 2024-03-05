@@ -19,3 +19,15 @@ def sign(x):
         return 0
 number_2 = float(input("Введите число sign(x): "))
 print(sign(number_2))
+lab #7
+def MinDivisor(n, i=2):
+    while i * i <= n:
+        if n % i == 0:
+            return i
+        i += 1
+    return n
+    
+print("Введите натуральное число")    
+n = int(input())
+
+print("Найменьше делитель:", MinDivisor(n))
